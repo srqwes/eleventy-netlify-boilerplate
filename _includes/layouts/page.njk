@@ -2,13 +2,24 @@
 layout: layouts/base.njk
 section: page
 ---
+	<!-- Page top section -->
+	<section class="page-top-section set-bg" data-setbg="{{ '/' | url }}_includes/assets/img/page-top-bg/4.jpg">
+		<div class="page-info">
+			<h2>Contact</h2>
+			<div class="site-breadcrumb">
+				<a href="">Udin</a>  /
+				<span>Udin</span>
+			</div>
+		</div>
+	</section>
+	<!-- Page top end-->
 
-<section class="page">
-		<div class="big-blog-item">
-			<div class="row">
-				<div class="col-xl-9 col-lg-8 col-md-7">
-                    {{ layoutContent | safe }}
-                </div>
-            </div>
-	    </div>
-</section>
+
+	<!-- Contact page -->
+	<section class="contact-page">
+		<div class="container">
+			{{ layoutContent | safe }}
+		</div>
+	</section>
+	<!-- Contact page end-->
+
