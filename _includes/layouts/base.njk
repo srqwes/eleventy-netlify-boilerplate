@@ -1,7 +1,7 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
 
-	{% include "components/header.njk" %}
+	{% include "components/head.njk" %}
 
 	<body>
 	<!-- Page Preloder -->
@@ -9,7 +9,7 @@
 		<div class="loader"></div>
 	</div>
 		
-	{% include  "components/head.njk" %}
+	{% include  "components/header.njk" %}
 
 		<main>
 			{{ layoutContent | safe }}
