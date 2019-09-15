@@ -6,19 +6,6 @@ permalink: /blog/index.html
 
 {% set postslist = collections.posts %}
 
-<!-- Page top section -->
-<section class="page-top-section set-bg" data-setbg="{{ '/' | url }}_includes/assets/img/page-top-bg/4.jpg">
-	<div class="page-info">
-		<h2>{{ title }}</h2>
-		<div class="site-breadcrumb">
-			<a href="">{{ title }}</a>  /
-			<span>{{ title }}</span>
-		</div>
-	</div>
-</section>
-<!-- Page top end-->
-
-
 <section class="blog-page">
 	<div class="container">
         {% include "components/postslist.njk" %}

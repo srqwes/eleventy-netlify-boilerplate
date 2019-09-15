@@ -10,6 +10,16 @@
 	</div>
 		
 	{% include  "components/header.njk" %}
+	
+	<section class="page-top-section set-bg" data-setbg="{{ '/' | url }}_includes/assets/img/page-top-bg/4.jpg">
+	<div class="page-info">
+		<h2>{{ title }}</h2>
+		<div class="site-breadcrumb">
+			<a href="">{{ title }}</a>  /
+			<span>{{ title }}</span>
+		</div>
+	</div>
+	</section>
 
 	{{ layoutContent | safe }}
 
