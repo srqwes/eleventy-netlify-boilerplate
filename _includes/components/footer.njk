@@ -32,13 +32,13 @@
 
 	<!--====== Javascripts & Jquery ======-->
     {% set js %}
-      {% include "assets/jquery-3.2.1.min.js" %}
-      {% include "assets/bootstrap.min.js" %}
-      {% include "assets/jquery.slicknav.min.js" %}
-      {% include "assets/owl.carousel.min.js" %}
-      {% include "assets/jquery.sticky-sidebar.min.js" %}
-      {% include "assets/jquery.magnific-popup.min.js" %}
-      {% include "assets/main.js" %}
+      {% include "assets/js/jquery-3.2.1.min.js" %}
+      {% include "assets/js/bootstrap.min.js" %}
+      {% include "assets/js/jquery.slicknav.min.js" %}
+      {% include "assets/js/owl.carousel.min.js" %}
+      {% include "assets/js/jquery.sticky-sidebar.min.js" %}
+      {% include "assets/js/jquery.magnific-popup.min.js" %}
+      {% include "assets/js/main.js" %}
     {% endset %}
   <script>{{ js | jsmin | safe }}</script>
 
