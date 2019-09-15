@@ -31,10 +31,14 @@
 
 
 	<!--====== Javascripts & Jquery ======-->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.sticky-sidebar.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/main.js"></script>
+    {% set js %}
+      {% include "assets/jquery-3.2.1.min.js" %}
+      {% include "assets/bootstrap.min.js" %}
+      {% include "assets/jquery.slicknav.min.js" %}
+      {% include "assets/owl.carousel.min.js" %}
+      {% include "assets/jquery.sticky-sidebar.min.js" %}
+      {% include "assets/jquery.magnific-popup.min.js" %}
+      {% include "assets/main.js" %}
+    {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+
