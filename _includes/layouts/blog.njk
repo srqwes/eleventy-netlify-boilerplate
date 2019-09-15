@@ -5,4 +5,10 @@ permalink: /blog/index.html
 ---
 
 {% set postslist = collections.posts %}
-{% include "components/postslist.njk" %}
+
+
+<section class="blog-page">
+	<div class="container">
+		{{ layoutContent | safe }}
+	</div>
+</section>
