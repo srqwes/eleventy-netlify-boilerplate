@@ -2,8 +2,36 @@
 layout: layouts/base.njk
 section: contact
 ---
-<h1>{{ title }}</h1>
+	<!-- Page top section -->
+	<section class="page-top-section set-bg" data-setbg="_includes/assets/img/page-top-bg/4.jpg">
+		<div class="page-info">
+			<h2>Contact</h2>
+			<div class="site-breadcrumb">
+				<a href="">Home</a>  /
+				<span>Contact</span>
+			</div>
+		</div>
+	</section>
+	<!-- Page top end-->
 
-{{ layoutContent | safe }}
 
-{% include "components/form.njk" %}
+	<!-- Contact page -->
+	<section class="contact-page">
+		<div class="container">
+			{{ layoutContent | safe }}
+		</div>
+	</section>
+	<!-- Contact page end-->
+
+
+	<!-- Newsletter section -->
+	<section class="newsletter-section">
+		<div class="container">
+			<h2>Subscribe to our newsletter</h2>
+			<form class="newsletter-form">
+				<input type="text" placeholder="ENTER YOUR E-MAIL">
+				<button class="site-btn">subscribe <img src="_includes/assets/img/icons/double-arrow.png" alt="#"/></button>
+			</form>
+		</div>
+	</section>
+	<!-- Newsletter section end -->
