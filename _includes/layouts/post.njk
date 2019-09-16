@@ -21,6 +21,35 @@ section: post
   </div>
 </section>  
 
+	<!-- Games section -->
+	<section class="games-single-page">
+		<div class="container">
+			<div class="game-single-preview">
+				<img src="img/games/big.jpg" alt="">
+			</div>
+			<div class="row">
+				<div class="col-xl-9 col-lg-8 col-md-7 game-single-content">
+					<div class="gs-meta">11.11.18  /  in <a href="">Games</a></div>
+					<h2 class="gs-title">Final Appocalipse 2.1</h2>
+					<h4>Gameplay</h4>
+					<p>{{ layoutContent | safe }}</p>
+					<h4>Conclusion</h4>
+					<p>{{ layoutContent | safe }}</p>
+					<div class="geme-social-share pt-5 d-flex">
+						<p>Share:</p>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+					</div>
+			    </div>
+        </div>
+		  </div>
+		</div>
+	</section>
+	<!-- Games end-->
+
   {% if tags %}
     <p>
     {% for tag in tags %}
@@ -37,3 +66,4 @@ section: post
 <nav>
   <a href="{{ '/blog/' | url }}">← Blog index</a>
 </nav>
+
