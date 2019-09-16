@@ -2,8 +2,7 @@
 title: This is my fifth post which has a rather long title
 summary: Why contemplating our mortality can be a powerful catalyst for change
 date: 2017-01-01
-thumbnail: <img src="_includes/assets/img/thumbnail/thumbnail1.jpg" alt="thumbnail"
-title="thumbnail1" width="150" height "100"/>
+thumbnail: thumbnail
 tags:
   - post
   - tech
