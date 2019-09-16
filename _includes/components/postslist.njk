@@ -13,9 +13,11 @@
 									{% endif %}
 								</a>
 							</h3>
-							<div class="review-pic">
-								<img src="{{ '/' | url }}_includes/assets/img/review/1.jpg" alt="">
-							</div>
+									{% if post.data.thumbnail %}
+										{{ post.data.thumbnail }}
+									{% else %}
+										Untitled
+									{% endif %}
 							{% if post.data.summary %}
 								<p>
 									{{ post.data.summary }}
