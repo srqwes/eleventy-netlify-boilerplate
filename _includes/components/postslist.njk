@@ -13,13 +13,13 @@
 									{% endif %}
 								</a>
 							</h3>
-								<p>
+								<div class="thumbnail-pic"
 										{% if post.data.thumbnail %}
 											<img src="{{ url }}{{ post.data.thumbnail }}"  alt="post.data.title">
 										{% else %}
 											<img  src="{{ '/' | url }}static/img/logo.png" alt="thumbnails">
 										{% endif %}
-								</p>
+								</div>
 									{% if post.data.summary %}
 								<p>
 									{{ post.data.summary }}
