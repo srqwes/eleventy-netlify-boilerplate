@@ -2,23 +2,14 @@
 title: This is my fifth post which has a rather long title
 summary: Why contemplating our mortality can be a powerful catalyst for change
 date: 2017-01-01
-thumbnail: thumbnail
 tags:
   - post
   - tech
   - politics
+thumbnail: /_includes/assets/img/thumbnail/thumbnail1.jpg
 
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-![thumbnail](_includes/assets/img/thumbnail/thumbnail1.jpg)
-
-```
-pre,
-code {
-	line-height: 1.5;
-}
-```
 
 Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
 
