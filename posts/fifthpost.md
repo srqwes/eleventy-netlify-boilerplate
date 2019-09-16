@@ -2,7 +2,7 @@
 title: This is my fifth post which has a rather long title
 summary: Why contemplating our mortality can be a powerful catalyst for change
 date: 2017-01-01
-thumbnail: ![Drag Racing]({{ '/' | url }}_includes/assets/img/thumbnail/thumbnail1.jpg)
+thumbnail: ![thumbnail]({{ '/' | url }}_includes/assets/img/thumbnail/thumbnail1.jpg)
 tags:
   - post
   - tech
