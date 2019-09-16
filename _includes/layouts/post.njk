@@ -12,12 +12,12 @@ section: post
         </div>
         <div class="row">
             <div class="col-xl-9 col-lg-8 col-md-7 game-single-content">
+                <h2 class="gs-title">{{ title }}</h2>
                     <p>
                         <small>
                         <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
                         </small>
                     </p>
-                <h2 class="gs-title">{{ title }}</h2>
                 <h4>Gameplay</h4>
                 <p>{{ layoutContent | safe }}</p>
                 <div class="geme-social-share pt-5 d-flex">
