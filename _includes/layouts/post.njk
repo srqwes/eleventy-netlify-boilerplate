@@ -12,9 +12,8 @@ section: post
       <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
     </small>
   </p>
-  <p align="center">
-    {{ layoutContent | safe }}
-  </p>
+
+  {{ layoutContent | safe }}
 
   {% if tags %}
     <p>
