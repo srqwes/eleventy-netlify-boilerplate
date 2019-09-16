@@ -1,7 +1,7 @@
 ---
-title: This is my fourth post
+title: COUNTER STRIKE
 summary: Why contemplating our mortality can be a powerful catalyst for change
-date: 2017-02-03
+date: 2019-09-16
 tags:
   - post
   - environment
