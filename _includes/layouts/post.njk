@@ -6,8 +6,8 @@ section: post
 {% include "components/pembatas.njk"%}  
 
 
-	<!-- article section -->
-	<section class="games-single-page">
+<!-- article section -->
+<section class="games-single-page">
 		<div class="container">
 			<div class="game-single-preview">
 				<img src="{{ '/' | url }}_includes/assets/img/games/big.jpg" alt="">
@@ -20,41 +20,40 @@ section: post
 					<p>{{ layoutContent | safe }}</p>
 			    </div>
             </div>
-		  </div>
-		</div>
-	</section>
-	<!-- article section end -->
+		</div>	
+<!-- article section end -->
 
-         {% set bukan = ['post','tech','environment','politics','sport','automotive'] %}
-    {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {% if tag not in bukan %}
-          {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-          <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-    {% endif %}  
+            {% set bukan = ['post','tech','environment','politics','sport','automotive'] %}
+        {% if tags %}
+        <p>
+        {% for tag in tags %}
+        {% if tag not in bukan %}
+            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+            <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+        {%- endif -%}
+        {% endfor %}
+        </p>
+        {% endif %}  
 
-    <div class="geme-social-share pt-5 d-flex">
-        <p>Share:</p>
-        <a href="#"><i class="fa fa-pinterest"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-dribbble"></i></a>
-        <a href="#"><i class="fa fa-behance"></i></a>
-    </div>
+        <div class="geme-social-share pt-5 d-flex">
+            <p>Share:</p>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+        </div>
 
-    <nav>
-      {% if tags %}
-          {% for tag in tags %}
-            {% if tag in bukan %}
-               <a href="{{ site.url }}/{{ tag | slug }}/">← {{ tag }} index</a>
-            {%- endif -%}
-          {% endfor %}
-      {% endif %}
-    </nav>  
+        <nav>
+        {% if tags %}
+            {% for tag in tags %}
+                {% if tag in bukan %}
+                <a href="{{ site.url }}/{{ tag | slug }}/">← {{ tag }} index</a>
+                {%- endif -%}
+            {% endfor %}
+        {% endif %}
+        </nav>
+</section></section>  
 
 
 
