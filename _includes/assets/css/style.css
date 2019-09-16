@@ -457,6 +457,16 @@ ol {
 }
 
 /*------------------
+  article section
+---------------------*/
+.article-head {
+	text-align: center;
+}
+.article-text {
+	text-align: center;
+}
+
+/*------------------
   Hero section
 ---------------------*/
 
