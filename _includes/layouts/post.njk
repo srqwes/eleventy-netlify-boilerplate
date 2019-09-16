@@ -5,35 +5,18 @@ section: post
 
 {% include "components/pembatas.njk"%}  
 
-<article>
-<section class="article-head"review-pic>
-  <h1>{{ title }}</h1>
-  <p>
-    <small>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
-    </small>
-  </p>
-</section>
 
-<section class="article" >
-  <div class="article-text">  
-  {{ layoutContent | safe }}
-  </div>
-</section>  
-
-	<!-- Games section -->
+	<!-- article section -->
 	<section class="games-single-page">
 		<div class="container">
 			<div class="game-single-preview">
-				<img src="img/games/big.jpg" alt="">
+				<img src="{{ '/' | url }}_includes/assets/img/games/big.jpg" alt="">
 			</div>
 			<div class="row">
 				<div class="col-xl-9 col-lg-8 col-md-7 game-single-content">
 					<div class="gs-meta">11.11.18  /  in <a href="">Games</a></div>
-					<h2 class="gs-title">Final Appocalipse 2.1</h2>
+					<h2 class="gs-title">{{ title }}</h2>
 					<h4>Gameplay</h4>
-					<p>{{ layoutContent | safe }}</p>
-					<h4>Conclusion</h4>
 					<p>{{ layoutContent | safe }}</p>
 					<div class="geme-social-share pt-5 d-flex">
 						<p>Share:</p>
@@ -48,22 +31,7 @@ section: post
 		  </div>
 		</div>
 	</section>
-	<!-- Games end-->
+	<!-- article section end -->
 
-  {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
 
-</article>
-
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
 
