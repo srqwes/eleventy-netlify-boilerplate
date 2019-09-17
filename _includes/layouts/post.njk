@@ -19,7 +19,18 @@ section: post
                         </small>
                     </p>
                 <h4>Gameplay</h4>
-                <p>{{ layoutContent | safe }}</p>
+                <p>{{ layoutContent | safe }}
+                    {% set bukan = ['tech','post','politics','environment','sport','automotive'] %}
+                </p>
+                <nav>
+                {% if tags %}
+                    {% for tag in tags %}
+                        {% if tag in bukan %}
+                            <a href="{{ site.url }}/{{ tag | slug }}/">← {{ tag }} index</a>
+                                {%- endif -%}
+                    {% endfor %}
+                {% endif %}
+                </nav>
                 <div class="geme-social-share pt-5 d-flex">
                     <p>Share:</p>
                     <a href="#"><i class="fa fa-pinterest"></i></a>
@@ -32,6 +43,7 @@ section: post
         </div>
     </div>
 </section>
+
 
 
 
