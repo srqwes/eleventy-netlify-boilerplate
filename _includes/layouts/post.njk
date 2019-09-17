@@ -43,7 +43,7 @@ section: post
                 <nav>
                 {% if tags %}
                     {% for tag in tags %}
-                        {% if tag in bukan %}
+                        {% if tag not in bukan %}
                             <a href="{{ site.url }}/{{ tag | slug }}/">← {{ tag }} index</a>
                                 {%- endif -%}
                     {% endfor %}
