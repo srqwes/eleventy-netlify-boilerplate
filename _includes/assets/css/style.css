@@ -470,9 +470,6 @@ ol {
   Hero section
 ---------------------*/
 
-.owl-next {
-	src : url("{{ '/' | url }}_includes/assets/img/icons/solid-right-arrow.png");
-}
 
 .hero-slider .owl-dots {
 	display: -ms-flex;
