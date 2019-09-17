@@ -21,16 +21,6 @@ section: post
                 <h4>Gameplay</h4>
                 {{ layoutContent | safe }}
                     {% set bukan = ['tech','post','politics','environment','sport','automotive'] %}
-                {% if tags %}
-                <p>
-                {% for tag in tags %}
-                {% if tag not in bukan %}
-                        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-                        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-                    {%- endif -%}
-                {% endfor %}
-                </p>
-                {% endif %}
                 </p>
                 <div class="geme-social-share pt-5 d-flex">
                     <p>Share:</p>
