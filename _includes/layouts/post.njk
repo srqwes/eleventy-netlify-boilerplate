@@ -19,9 +19,27 @@ section: post
                         </small>
                     </p>
                 <h4>Gameplay</h4>
-                <p>{{ layoutContent | safe }}
+                {{ layoutContent | safe }}
                     {% set bukan = ['tech','post','politics','environment','sport','automotive'] %}
+                {% if tags %}
+                <p>
+                {% for tag in tags %}
+                {% if tag not in bukan %}
+                        {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+                        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+                    {%- endif -%}
+                {% endfor %}
                 </p>
+                {% endif %}
+                </p>
+                <div class="geme-social-share pt-5 d-flex">
+                    <p>Share:</p>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                </div>
                 <nav>
                 {% if tags %}
                     {% for tag in tags %}
@@ -31,14 +49,6 @@ section: post
                     {% endfor %}
                 {% endif %}
                 </nav>
-                <div class="geme-social-share pt-5 d-flex">
-                    <p>Share:</p>
-                    <a href="#"><i class="fa fa-pinterest"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                    <a href="#"><i class="fa fa-behance"></i></a>
-                </div>
             </div>
         </div>
     </div>
